@@ -25,16 +25,30 @@
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
-            <version>6.0.0</version> <!-- Updated to the latest version -->
+            <version>6.0.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>jakarta.servlet.jsp</groupId>
             <artifactId>jakarta.servlet.jsp-api</artifactId>
-            <version>3.0.0</version> <!-- Updated to the latest version -->
+            <version>3.0.0</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Other dependencies -->
+
+        <!-- JUnit 5 API -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JUnit 5 Engine -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.7.1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -52,7 +66,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.1</version> <!-- Updated to a stable version -->
+                <version>3.3.1</version>
             </plugin>
 
             <plugin>
@@ -63,4 +77,3 @@
         </plugins>
     </build>
 </project>
-
