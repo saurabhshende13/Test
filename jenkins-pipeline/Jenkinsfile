@@ -51,7 +51,7 @@ pipeline {
                         mvn deploy:deploy-file \
                             -DgroupId=com.example \
                             -DartifactId=ci-cd-tomcat-project \
-                            -Dversion=1.0.5 \
+                            -Dversion=1.0.6 \
                             -Dpackaging=war \
                             -Dfile=target/ci-cd-tomcat-project-1.0-SNAPSHOT.war \
                             -DrepositoryId=nexus \
